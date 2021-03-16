@@ -13,7 +13,7 @@ import contain3Pic from '../images/contain-3-pic.png';
 function Contain() {
 	return (
 		<section className="contain">
-			<article className="contain-article" data-aos="flip-down">
+			<article className="contain-article" data-aos="flip-right">
 				<div className="contain-article-header">
 					<h2>信頼の認証</h2>
 				</div>
@@ -36,7 +36,7 @@ function Contain() {
 				</div>
 			</article>
 
-			<article className="contain-article" data-aos="flip-down" data-aos-delay="500">
+			<article className="contain-article" data-aos="flip-right" data-aos-delay="500">
 				<div className="contain-article-header">
 					<h2>くまニュース</h2>
 				</div>
@@ -90,7 +90,7 @@ function Contain() {
 
 				<div className="contain-article2-footer">もっと見る</div>
 			</article>
-			<article className="contain-article" data-aos="flip-down" data-aos-delay="1000">
+			<article className="contain-article" data-aos="flip-right" data-aos-delay="1000">
 				<div className="contain-article-header">
 					<h2>Facebook</h2>
 				</div>
