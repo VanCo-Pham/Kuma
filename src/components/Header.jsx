@@ -27,7 +27,7 @@ function Header() {
 			</div>
 			<div className="header-menu" data-aos="zoom-in" data-aos-delay="900">
 				<img src={menuIcon} alt="" />
-				<p style={{ fontSize: '10px', textAlign: 'center' }}>MENU</p>
+				<p>MENU</p>
 			</div>
 		</header>
 	);

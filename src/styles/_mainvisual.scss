@@ -1,6 +1,7 @@
 .main {
 	height: 100%;
 	width: 100%;
+	background: #060605;
 	background-image: url('../images/main-bg.png');
 	background-size: cover;
 	background-position: top;
@@ -8,60 +9,89 @@
 	display: flex;
 	justify-content: flex-start;
 	position: relative;
-
 	&-text {
-		height: 80vh;
+		height: 600px;
 		color: white;
-		// background: red;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		padding-right: 10px;
-		h1 {
-			font-size: 5vw;
+		padding-left: 20px;
+		z-index: 4;
+		h3 {
+			width: 80%;
+			text-align: left;
+			text-indent: 15px;
+		}
+		img {
+			width: 80%;
+			padding-bottom: 1rem;
 		}
 	}
 	&-images {
 		position: relative;
 		height: 50vh;
 		width: 45vw;
-		// height: 100%;
-		// background: lightgreen;
 		display: flex;
 		justify-content: center;
 		padding-left: 5rem;
 		margin-right: 4rem;
 	}
 	.main-yellow,
-	.main-human {
-		width: 41vw;
+	.main-human,
+	.main-shadow {
+		width: 620px;
 		position: absolute;
 		bottom: 0;
 		left: 5vw;
+		animation: appear 4s 1 ease-in-out;
+	}
+	.main-human {
+		z-index: 3;
+	}
+	.main-shadow {
+		z-index: 1;
+		bottom: 50px;
+	}
+	.main-yellow {
+		z-index: 2;
 	}
 }
 
-// @media (max-width: 830px) {
-// 	.main-human,
-// 	.main-yellow {
-// 		bottom: 33px !important;
-// 	}
-// }
-
-@media (max-width: 860px) {
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@media (max-width: 1300px) {
+	.main-human,
+	.main-yellow,
+	.main-shadow {
+		bottom: 0 !important;
+		left: 25% !important;
+		transform: translateX(-50%);
+		width: 500px !important;
+	}
+}
+@media (max-width: 980px) {
 	.main-text {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
 		width: 100%;
 		padding-top: 5vh;
-		h1 {
-			font-size: 2rem;
+		img {
+			margin-right: auto;
 		}
 		h3 {
 			font-size: 1rem;
-			padding: 2px 15px;
-			text-align: center;
+			text-indent: unset;
+			width: 60%;
+			margin-right: auto;
 		}
 	}
 	.main-images {
@@ -69,10 +99,32 @@
 	}
 
 	.main-human,
-	.main-yellow {
-		bottom: 33px !important;
+	.main-yellow,
+	.main-shadow {
+		// bottom: 0 !important;
+		left: 71% !important;
+		transform: translateX(-50%);
+		width: 350px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	.main-text {
+		img {
+			width: 90%;
+			min-width: 320px;
+			margin-right: unset;
+		}
+		h3 {
+			width: 90%;
+			margin-right: unset;
+		}
+	}
+	.main-human,
+	.main-yellow,
+	.main-shadow {
 		left: 50% !important;
 		transform: translateX(-50%);
-		width: 44vh !important;
+		width: 320px !important;
 	}
 }

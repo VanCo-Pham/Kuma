@@ -10,7 +10,7 @@ function Footer() {
 			<div className="scroll-top">
 				<Link to="topbar" spy={true} smooth={true}>
 					<img src={footerUpIcon} alt="" />
-					<h2>SCROLL TOP</h2>
+					<h2 data-aos="fade-up">SCROLL TOP</h2>
 				</Link>
 			</div>
 			<ul className="footer-steps">

@@ -2,7 +2,7 @@ header {
 	background: red;
 	display: flex;
 	align-items: center;
-	height: 10vh;
+	height: 60px;
 	.header-items {
 		height: 100%;
 		display: flex;
@@ -34,16 +34,20 @@ header {
 		}
 	}
 	.header-menu {
-		height: 100%;
-		width: 10vh;
+		height: 60px;
+		width: 60px;
 		margin-right: 0;
 		background: #3e312b;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-direction: column;
+		align-items: center;
 		color: white;
 		padding: 10px;
 		cursor: pointer;
+		p {
+			font-size: 10px;
+		}
 		&:hover p {
 			transform: scale(1.2);
 		}
@@ -54,7 +58,7 @@ header {
 	}
 }
 
-@media (max-width: 940px) {
+@media (max-width: 960px) {
 	header .header-items {
 		display: none;
 	}
