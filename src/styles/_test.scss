@@ -1,0 +1,42 @@
+.test {
+	height: 100vh;
+	width: 100vw;
+	.test-article {
+		display: flex;
+		flex-direction: column;
+		width: 50vw;
+		margin: auto;
+		&-group1 {
+			background: lightblue;
+			position: relative;
+			// padding-top: 10vh;
+			h2 {
+				background: peru;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+			p {
+				position: absolute;
+				width: 100%;
+				bottom: 100%;
+			}
+			.header-images,
+			.header-chatbox {
+				width: 50%;
+				position: absolute;
+			}
+			.header-images {
+				bottom: 0;
+				right: 0;
+			}
+			.header-chatbox {
+				bottom: 80%;
+			}
+		}
+
+		&-group2 {
+			background: lightcyan;
+		}
+	}
+}

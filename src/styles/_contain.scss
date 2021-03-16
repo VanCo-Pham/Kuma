@@ -1,0 +1,143 @@
+.contain {
+	display: flex;
+	width: 90vw;
+	justify-content: space-evenly;
+	margin: auto;
+	margin-top: 40vh;
+	gap: 10px;
+	flex-wrap: wrap;
+	&-article {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 350px;
+		height: 730px;
+		&-main {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			&-first {
+				width: 60%;
+				padding: 1rem;
+			}
+		}
+		&-mid {
+			display: flex;
+			width: 100%;
+			background: white;
+			justify-content: space-evenly;
+			border: 1px solid;
+			img {
+				width: 40%;
+				padding: 16px;
+				height: auto;
+				transition: all 0.5s;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+		&-footer {
+			margin: 1rem;
+		}
+		&-header {
+			width: 100%;
+			h2 {
+				background: #3e312b;
+				color: white;
+				padding-left: 10px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+			}
+		}
+		&-header-chat {
+			position: absolute;
+			background: yellow;
+			top: 0;
+			right: 0;
+		}
+	}
+	&-article2 {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		color: #3156ad;
+
+		&-item {
+			display: flex;
+			padding: 10px 0;
+			border-bottom: 1px solid;
+			width: 100%;
+			justify-content: space-around;
+			align-items: center;
+			cursor: pointer;
+			&:hover {
+				color: green;
+			}
+			&-icon {
+				width: 40px;
+				padding-right: 5px;
+				object-fit: contain;
+			}
+			&-text {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		&-footer {
+			color: #3156ad;
+			padding: 1rem;
+		}
+	}
+	.contain-article-human,
+	.chatbox {
+		position: absolute;
+	}
+	.contain-article3-pic {
+		width: 100%;
+	}
+	.contain-article-human {
+		bottom: 0;
+		right: 0;
+		width: auto;
+		height: 150px;
+	}
+	.chatbox {
+		min-height: 150px;
+		width: 200px;
+		z-index: -1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: 100px;
+		bottom: 65px;
+		p {
+			z-index: 3;
+			padding: 10px;
+			position: absolute;
+			// width: 80%;
+			left: 10px;
+			top: 0;
+		}
+		img {
+			width: 120%;
+			position: absolute;
+			height: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.contain-article {
+		justify-content: center;
+	}
+	.contain {
+		margin-top: 20vh;
+	}
+}

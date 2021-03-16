@@ -1,0 +1,18 @@
+@import './header';
+@import './about';
+@import './mainvisual';
+@import './contain';
+@import './test';
+@import './footer';
+@import './float';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+li {
+	list-style-type: none;
+}

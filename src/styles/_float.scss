@@ -1,0 +1,49 @@
+.float {
+	color: white;
+	margin: auto;
+	position: fixed;
+	bottom: 1vw;
+	right: 1vw;
+	transform: scaleX(0.8) scaleY(0.8);
+	&-container {
+		width: 150px;
+		height: 150px;
+		background: #a20a0c;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		img {
+			position: absolute;
+			top: -77px;
+			right: 0;
+			object-fit: contain;
+			height: 200px;
+		}
+		h3 {
+			background: #3e312b;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			text-align: center;
+		}
+		.float-text {
+			z-index: 1;
+			p {
+				position: absolute;
+				left: 0px;
+				top: -155px;
+				text-align: center;
+				color: #333333;
+				font-weight: 500;
+			}
+			img {
+				width: 120px;
+				position: absolute;
+				height: 120px;
+				top: -170px;
+				left: -10px;
+			}
+		}
+	}
+}
