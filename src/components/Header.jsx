@@ -12,16 +12,16 @@ function Header() {
 				<div className="header-item" data-aos="zoom-in">
 					会社概要
 				</div>
-				<div className="header-item" data-aos="zoom-in" data-aos-delay="500">
+				<div className="header-item" data-aos="zoom-in">
 					サービス内容
 				</div>
-				<div className="header-item" data-aos="zoom-in" data-aos-delay="600">
+				<div className="header-item" data-aos="zoom-in">
 					LLC KUMAについて
 				</div>
-				<div className="header-item" data-aos="zoom-in" data-aos-delay="700">
+				<div className="header-item" data-aos="zoom-in">
 					アクセス
 				</div>
-				<div className="header-item" data-aos="zoom-in" data-aos-delay="800">
+				<div className="header-item" data-aos="zoom-in">
 					お問い合わせ
 				</div>
 			</div>

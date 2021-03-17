@@ -28,8 +28,6 @@ header .header-items .header-item {
   color: white;
   margin: 10px;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 header .header-items .header-item:hover {
