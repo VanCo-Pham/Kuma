@@ -47,12 +47,13 @@ header {
 		cursor: pointer;
 		p {
 			font-size: 10px;
+			padding-top: 2px;
 		}
 		&:hover p {
 			transform: scale(1.2);
 		}
 		img {
-			height: 4vh;
+			height: 30px;
 			object-fit: contain;
 		}
 	}
